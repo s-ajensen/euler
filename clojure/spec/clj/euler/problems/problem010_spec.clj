@@ -4,29 +4,6 @@
 
 (describe "Problem 10"
 
-  #_(context "produces primes"
-
-    ;(tags :slow)
-
-    (it "1"
-      (should= [2] (take 1 sut/primes)))
-
-    (it "2"
-      (should= [2 3] (take 2 sut/primes)))
-
-    (it "3"
-      (should= [2 3 5] (take 3 sut/primes)))
-
-    (it "4"
-      (should= [2 3 5 7] (take 4 sut/primes)))
-
-    (it "5"
-      (should= [2 3 5 7 11] (take 5 sut/primes)))
-
-    ; slow
-    #_(it "big"
-      (should (doall (take 10000 sut/primes)))))
-
   (it "prime?"
     (should (sut/prime? 2))
     (should (sut/prime? 3))
