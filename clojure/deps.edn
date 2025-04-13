@@ -12,6 +12,6 @@
              :repl       {:jvm-opts ["-XstartOnFirstThread"] :main-opts ["-e" "(require,'euler.repl)" "-e" "(in-ns,'euler.repl)" "--repl"] :extra-paths ["dev"]}
              :run        {:jvm-opts ["-XstartOnFirstThread"] :main-opts ["-m" "euler.main"]}
              :spec       {:jvm-opts  ["-XstartOnFirstThread"]
-                          :main-opts ["-m" "speclj.main" "-c"]}
+                          :main-opts ["-m" "speclj.main" "-c" "-t" "~slow"]}
              }
  }
